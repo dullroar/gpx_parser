@@ -1,0 +1,1 @@
+# No external dependencies — gpx_parser.py uses Python standard library only.

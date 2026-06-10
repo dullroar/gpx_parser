@@ -1,0 +1,31 @@
+file_name,route_name,start_location,end_location,distance_miles,elevation_gain,elevation_loss
+td01s1d1-grape-cr-to-cottonwood-cr.gpx,TD01:S1:D1 Grape Cr to Cottonwood Cr,"37.931098, -105.457566","38.066779, -105.556629",10.8,1175.8,1109.0
+td02s1d2-cottonwood-cr-to-goat-cr.gpx,TD02:S1:D2 Cottonwood Cr to Goat Cr,"38.065623, -105.555879","38.190284, -105.629770",9.5,1165.2,1238.0
+td03s1d3-goat-cr-to-big-cottonwood-cr.gpx,TD03:S1:D3 Goat Cr to Big Cottonwood Cr,"38.189904, -105.630094","38.317207, -105.755602",11.1,816.4,1396.8
+td04s1d4-big-cottonwood-cr-to-hunts-lake-tr.gpx,TD04:S1:D4 Big Cottonwood Cr to Hunts Lake Tr,"38.317116, -105.755989","38.405710, -105.900241",9.9,2029.0,1476.2
+td05s1d5-hunts-lake-tr-to-salida.gpx,TD05:S1:D5 Hunts Lake Tr to Salida,"38.406140, -105.900614","38.523724, -105.996992",9.6,916.4,1536.8
+td06s2d1-salida-to-murphys-hole.gpx,TD06:S2:D1 Salida to Murphys Hole,"38.494778, -106.005720","38.397655, -106.118486",9.1,1595.8,1117.8
+td07s2d2-murphys-hole-to-cameron-park.gpx,TD07:S2:D2 Murphys Hole to Cameron Park,"38.398013, -106.118396","38.313715, -106.333087",13.0,1465.0,1170.8
+td08s2d3-cameron-park-to-razor-cr.gpx,TD08:S2:D3 Cameron Park to Razor Cr,"38.313769, -106.333050","38.293202, -106.525102",10.5,991.2,901.4
+td09s2d4-razor-cr-to-co-114.gpx,TD09:S2:D4 Razor Cr to CO 114,"38.293509, -106.525554","38.223858, -106.591181",6.0,657.2,965.2
+td10s3d1-co-114-to-cochetopa-park.gpx,TD10:S3:D1 CO 114 to Cochetopa Park,"38.223375, -106.591892","38.107463, -106.756754",12.0,787.6,663.0
+td11s3d2-cochetopa-park-to-la-garita-wilderness.gpx,TD11:S3:D2 Cochetopa Park to La Garita Wilderness,"38.107807, -106.756414","37.974315, -106.899723",12.1,929.2,442.4
+td12s3d3-la-garita-wilderness-to-willow-cr-headwaters.gpx,TD12:S3:D3 La Garita Wilderness to Willow Cr Headwaters,"37.974482, -106.899747","37.939319, -107.074004",9.8,2044.0,1827.0
+td13s3d4-willow-cr-to-spring-creek-pass.gpx,TD13:S3:D4 Willow Cr to Spring Creek Pass,"37.939699, -107.074345","37.940040, -107.158417",4.6,121.6,547.6
+td14s4d1-spring-creek-pass-to-ruby-creek-headwaters.gpx,TD14:S4:D1 Spring Creek Pass to Ruby Creek Headwaters,"37.940671, -107.159321","37.892296, -107.307811",8.8,808.4,331.2
+td15s4d2-ruby-creek-to-middle-pole-trail.gpx,TD15:S4:D2 Ruby Creek to Middle Pole Trail,"37.891612, -107.308746","37.826234, -107.520173",12.4,1363.2,1281.2
+td16s4d3-pole-creek-to-elk-creek.gpx,TD16:S4:D3 Pole Creek to Elk Creek,"37.828059, -107.520398","37.721081, -107.606954",8.8,1050.5,1865.6
+td17s4d4-elk-creek-to-molas-lake.gpx,TD17:S4:D4 Elk Creek to Molas Lake,"37.721143, -107.605600","37.749651, -107.684363",4.7,970.2,819.8
+td18s5d1-molas-lake-to-elk-creek-headwaters.gpx,TD18:S5:D1 Molas Lake to Elk Creek Headwaters,"37.750717, -107.684452","37.719843, -107.545180",7.9,1490.8,992.8
+td19s5d2-elk-creek-to-ute-lake.gpx,TD19:S5:D2 Elk Creek to Ute Lake,"37.719858, -107.545005","37.638971, -107.437269",8.1,1548.6,1641.6
+td20s5d3-ute-lake-to-grizzly-lake.gpx,TD20:S5:D3 Ute Lake to Grizzly Lake,"37.638452, -107.437098","37.637573, -107.255047",10.0,1308.9,1401.4
+td21s5d4-grizzly-lake-to-cimarrona-cg.gpx,TD21:S5:D4 Grizzly Lake to Cimarrona CG,"37.638325, -107.256138","37.540381, -107.210448",7.2,1062.8,2051.6
+td22s6d1-williams-creek-th-to-williams-creek-lake.gpx,TD22:S6:D1 Williams Creek TH to Williams Creek Lake,"37.540699, -107.197664","37.629417, -107.149598",6.7,1440.6,439.4
+td23s6d2-williams-creek-lake-to-piedra-pass.gpx,TD23:S6:D2 Williams Creek Lake to Piedra Pass,"37.630446, -107.150427","37.565147, -107.010222",8.9,1728.0,1753.2
+td24s6d3-piedra-pass-to-archuleta-lake.gpx,TD24:S6:D3 Piedra Pass to Archuleta Lake,"37.571053, -107.001555","37.535679, -106.879939",7.1,1140.2,1010.2
+td25s6d4-archulets-lake-to-wolf-creek-pass.gpx,TD25:S6:D4 Archulets Lake to Wolf Creek Pass,"37.535645, -106.879877","37.483172, -106.801586",5.6,606.9,902.0
+td26s7d1-wolf-creek-pass-to-bonita-pass.gpx,TD26:S7:D1 Wolf Creek Pass to Bonita Pass,"37.482680, -106.797803","37.444854, -106.708403",5.6,1228.4,1092.2
+td27s7d2-bonita-pass-to-adams-fork-tr.gpx,TD27:S7:D2 Bonita Pass to Adams Fork Tr,"37.444727, -106.708242","37.330874, -106.689953",7.9,1035.8,975.2
+td28s7d3-adams-fork-tr-to-blue-lake.gpx,TD28:S7:D3 Adams Fork Tr to Blue Lake,"37.328906, -106.688768","37.237765, -106.628076",7.1,1613.2,1563.0
+td29s7d4-blue-lake-to-dipping-lakes.gpx,TD29:S7:D4 Blue Lake to Dipping Lakes,"37.237535, -106.628725","37.131158, -106.549906",8.5,576.6,651.4
+td30s7d5-dipping-lakes-to-cumbres-pass.gpx,TD30:S7:D5 Dipping Lakes to Cumbres Pass,"37.131158, -106.549906","37.016569, -106.450264",9.6,1052.8,1423.0
