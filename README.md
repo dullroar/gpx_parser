@@ -1,5 +1,7 @@
 # GPX Parser
 
+For calculation boundaries and implementation decisions, see [DESIGN.md](DESIGN.md).
+
 A command-line tool that batch-processes GPX files and summarizes each route's key statistics into a single CSV file.
 
 ## Features
@@ -53,14 +55,10 @@ td01s1d1-grape-cr-to-cottonwood-cr.gpx,TD01:S1:D1 Grape Cr to Cottonwood Cr,"37.
 td02s1d2-cottonwood-cr-to-goat-cr.gpx,TD02:S1:D2 Cottonwood Cr to Goat Cr,"38.065623, -105.555879","38.190284, -105.629770",9.5,1165.2,1238.0
 ```
 
-## How It Works
+## Implementation notes
 
-1. Each GPX file is parsed with Python's built-in `xml.etree.ElementTree`.
-2. The script looks for a `<trk>` (track) element first, then falls back to a `<rte>` (route) element.
-3. All `<trkpt>` or `<rtept>` coordinates are collected in order.
-4. Straight-line distance is computed with the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) between the first and last points.
-5. Elevation gain and loss are accumulated by summing positive and negative differences between consecutive `<ele>` values.
-6. Results from all files are written to a single CSV.
+The parser's track/route selection and calculation boundaries are documented in
+[DESIGN.md](DESIGN.md).
 
 ## Sample Dataset
 
