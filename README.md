@@ -1,6 +1,6 @@
 # GPX Parser
 
-For calculation boundaries and implementation decisions, see [DESIGN.md](DESIGN.md).
+For calculation boundaries and implementation decisions, see [docs/design/](docs/design/README.md).
 
 A command-line tool that batch-processes GPX files and summarizes each route's key statistics into a single CSV file.
 
@@ -58,7 +58,7 @@ td02s1d2-cottonwood-cr-to-goat-cr.gpx,TD02:S1:D2 Cottonwood Cr to Goat Cr,"38.06
 ## Implementation notes
 
 The parser's track/route selection and calculation boundaries are documented in
-[DESIGN.md](DESIGN.md).
+[docs/design/](docs/design/README.md).
 
 ## Sample Dataset
 
