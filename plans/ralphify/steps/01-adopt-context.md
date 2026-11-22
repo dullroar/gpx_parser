@@ -27,7 +27,9 @@ touches:
 lane: none
 requirements: [R1]
 gate: python3 scripts/build_indexes.py --check && python3 scripts/check_context.py && git diff --check
-evidence: "2026-11-22 UTC. PASS python3 scripts/build_indexes.py --check && python3 scripts/check_context.py && git diff --check"
+evidence: gate passed 2026-11-22 (driver-verified)
+claimed_by: codex cli-default
+claimed_at: "2026-11-22T20:38:34Z"
 ---
 
 # 01-adopt-context
