@@ -28,3 +28,9 @@ Touches `Dockerfile`, `.dockerignore`, `README.md`, `scripts/test_docker.sh`, ge
 ## Repository gate
 
 Keep the stdlib-only package footprint and single-file CLI. Add an isolated CLI test under `tests/` using synthetic GPX. Exercise explicit-file and directory input. Assert CSV columns, rows, and representative distance or elevation values. Use a temporary working directory because the CLI writes `gpx_summary.csv` to the current directory. Preserve the existing sample output.
+
+## Verification
+
+- The step gate passed on 2026-11-22 UTC in the linked worktree.
+- The Docker image built. Both CLI tests passed with the container network disabled. The tests checked the CSV header, rows, distances, and elevation gain and loss.
+- The context checks passed inside Docker and on the host. The whitespace check passed.
