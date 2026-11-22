@@ -60,6 +60,30 @@ td02s1d2-cottonwood-cr-to-goat-cr.gpx,TD02:S1:D2 Cottonwood Cr to Goat Cr,"38.06
 The parser's track/route selection and calculation boundaries are documented in
 [docs/design/](docs/design/README.md).
 
+## Docker build and tests
+
+Use Bash and a running Docker engine that can build and run Linux containers.
+The build can pull the Python base image. The tests use synthetic GPX files
+and run with the container network disabled.
+
+```bash
+docker build -t gpx-parser:test .
+bash scripts/test_docker.sh
+```
+
+The test script builds a temporary image from the current checkout. It runs
+the CLI tests and context checks as a normal container user, then removes the
+temporary image. To run the CLI tests directly on the host, use
+`python3 -m unittest discover -s tests -v` with Python 3.11 or later.
+
+To run the [migration plan](plans/ralphify/plan.md) with
+[ralph-looper](https://github.com/dullroar/ralph-looper), run this command from
+the repository with Ralph Looper and Codex on your path.
+
+```bash
+ralph-looper --repo . --plan ralphify --agent codex
+```
+
 ## Sample Dataset
 
 The included GPX files are 30 day-segments of a long route through southern Colorado, labeled with a `TD##:S#:D#` naming convention (Trail Day : Segment : Day). The route runs roughly from Grape Creek near Salida south to Cumbres Pass, covering terrain in the San Juan Mountains and Rio Grande National Forest.
