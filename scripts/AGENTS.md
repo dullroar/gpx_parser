@@ -23,12 +23,18 @@ Read the list. Run only the scripts whose "Run me when" line matches your task.
   Run me when: I changed or moved any Markdown file, and before every pull request.
 * [check_plan.py](./check_plan.py)
   Run me when: I create or change a plan or step, and before a plan loop starts.
+* [controls-requirements.txt](./controls-requirements.txt)
+  Run me when: I install or upgrade the pinned deterministic-controls library (the check_context.py shim reads this pin).
 * [ctx_common.py](./ctx_common.py)
   Run me when: I edit context scripts that share file discovery or front matter.
+* [install_hooks.sh](./install_hooks.sh)
+  Run me when: I cloned a repository, or the hooks are missing (check with --check).
 * [scan_context_secrets.py](./scan_context_secrets.py)
   Run me when: I use the original secret scan command. It runs scan_secrets.py.
 * [scan_secrets.py](./scan_secrets.py)
   Run me when: I changed AGENTS.md, CLAUDE.md, docs/, memory/ or plans/, and before every pull request.
+* [secret_guard.py](./secret_guard.py)
+  Run me when: before a commit or a push (the hooks do it), in CI, before a merge, or to audit a repository for secrets.
 * [test_docker.sh](./test_docker.sh)
   Run me when: I need to build the GPX Parser image and run the CLI and context checks.
 
