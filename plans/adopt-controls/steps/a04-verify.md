@@ -1,6 +1,6 @@
 ---
 id: a04-verify
-status: pending
+status: done
 depends_on: [a03-probes]
 touches:
   - plans/adopt-controls/steps/a04-verify.md
@@ -10,7 +10,7 @@ gate: d=$(mktemp -d) && trap 'rm -rf "$d"' EXIT && git clone -q . "$d/clone" && 
 requirements: [R4]
 claimed_by: ""
 claimed_at: ""
-evidence: ""
+evidence: "2026-11-24 UTC, session checks in the worktree: secret_guard.py --history = 0 findings; check_context.py = pass (5 ok); build_indexes.py --check = pass; secret_guard.py --tracked = 0 findings; install_hooks.sh --self-test = ok; unittest discover -s tests -v = 23 tests, OK. The gate (clean clone, Docker) runs in the driver."
 ---
 
 # Verify the full gates from a clean clone
@@ -44,4 +44,6 @@ After the operator merges this plan, the operator runs `bash scripts/install_hoo
 
 ## Resume notes
 
-(none)
+history-findings=0
+
+The Docker and clean-clone checks ran in the gate, not in this session. This session reports no Docker result.
