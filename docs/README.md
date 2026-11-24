@@ -6,4 +6,5 @@ Edit this index by hand. Add one line each time you add a file.
 | File | What it is for |
 | --- | --- |
 | [Design notes](./design/README.md) | Read when you change the repository's design, calculation boundaries, or dependencies. |
+| [Controls adoption](./controls-adoption.md) | Read when you change, run or roll back the pinned deterministic-controls checks. |
 | [Ralph Looper guide](https://github.com/dullroar/ralph-looper) | Read when you run a plan with `ralph-looper`. |

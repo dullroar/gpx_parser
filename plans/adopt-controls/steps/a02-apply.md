@@ -1,6 +1,6 @@
 ---
 id: a02-apply
-status: pending
+status: in_progress
 depends_on: [a01-audit]
 touches:
   - .dockerignore
@@ -65,4 +65,6 @@ If you cannot finish, write "Resume notes" below. Keep the status `in_progress`.
 
 ## Resume notes
 
-(none)
+Work is done. My session cannot run Docker, so `bash scripts/test_docker.sh` did not run. All other parts of the gate pass. The driver must run the Docker part. Check there that the shim writes nothing outside `/tmp` in the read-only run.
+
+Status stays `in_progress` until the driver confirms the Docker gate.
