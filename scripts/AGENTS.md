@@ -23,6 +23,8 @@ Read the list. Run only the scripts whose "Run me when" line matches your task.
   Run me when: I changed or moved any Markdown file, and before every pull request.
 * [check_plan.py](./check_plan.py)
   Run me when: I create or change a plan or step, and before a plan loop starts.
+* [controls-requirements.txt](./controls-requirements.txt)
+  Run me when: I install or upgrade the pinned deterministic-controls library (the check_context.py shim reads this pin).
 * [ctx_common.py](./ctx_common.py)
   Run me when: I edit context scripts that share file discovery or front matter.
 * [install_hooks.sh](./install_hooks.sh)
