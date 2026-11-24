@@ -27,6 +27,7 @@ This repository uses the pinned `deterministic-controls` library in advisory mod
 - `adopt apply` rewrote `scripts/install_hooks.sh` (a `secretguard.path` fallback). That file is outside the scope of the step. It was restored to the previous version.
 - `adopt apply` did not commit its output. The agent committed it.
 - The Docker run has no network and a read-only root. The shim cannot build its cache there. The `Dockerfile` now builds the cache at image build time, as user `tester`, with the shim functions. The `Dockerfile` also installs `git` with `apt-get`. The shim needs `git` to install the pinned commit. `tests/test_secret_guard.py` also needs it. The `CMD`, `--network none` and `--read-only` did not change.
+- `.dockerignore` is an allowlist. `adopt apply` did not add `controls.toml` to it. The image then lacked the manifest, and the shim failed with "manifest not found". The step now adds `!controls.toml`. The excludes for secrets did not change.
 - Not verified: whether the shim writes outside `/tmp` at run time. The agent session cannot run Docker. The driver gate shows it.
 
 ## Secret guard exceptions

@@ -65,4 +65,4 @@ If you cannot finish, write "Resume notes" below. Keep the status `in_progress`.
 
 ## Resume notes
 
-(none)
+Added `!controls.toml` to `.dockerignore`. All gate parts except `bash scripts/test_docker.sh` passed in this session. This session cannot run Docker. The driver must run that part. Status stays `in_progress` until the driver gate passes.
