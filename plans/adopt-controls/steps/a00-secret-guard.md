@@ -1,6 +1,6 @@
 ---
 id: a00-secret-guard
-status: pending
+status: done
 depends_on: []
 touches:
   - scripts/secret_guard.py
@@ -16,7 +16,7 @@ gate: python3 -m unittest discover -s tests -p 'test_secret_guard.py' -v && bash
 requirements: [R1]
 claimed_by: ""
 claimed_at: ""
-evidence: ""
+evidence: "2026-11-24: ran the gate parts one by one: guard unit tests (21 ok), install_hooks.sh --self-test ok, secret_guard.py --tracked 0 findings, build_indexes.py --check ok, check_context.py ok, git diff --check clean. Workflow pins actions/checkout to 11d5960a326750d5838078e36cf38b85af677262 (v4.4.0); the pin was not checked against the network."
 ---
 
 # Install the secret guard, the hooks and the CI step
